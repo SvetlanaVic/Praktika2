@@ -1,1 +1,169 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
 
+@media screen and (min-width:1000px) {
+
+    html,
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    /* Настройка для самого верхнего блока */
+
+    .inner2 {
+        flex: 1;
+    }
+
+    .inner-header{
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    html,
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Настройка для самого верхнего блока */
+
+    .inner2 {
+        flex: 1;
+    }
+    .inner-header{
+        flex: 1;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+   
+    html,
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    /* Настройка для самого верхнего блока */
+
+    .outer1 {
+        width: 95%;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+
+    .outer2{
+        flex-wrap: wrap;
+    }
+
+    .inner2{
+        
+        flex-basis: 100%;
+    }
+
+    .inner-header{
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:300px){
+    
+    html,
+    body {
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .inner-header{
+        flex-basis: 100%;
+
+    }
+
+    .header{
+        flex-wrap: wrap;
+
+    }
+
+    .container-header{
+        position: static;
+        top: 0;
+        left: 0;
+    }
+} 
+
+.container1, .container2, .container-header, .footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.outer1{
+    width: 95%;
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.outer2{
+    margin-top: 10px;
+    width: 95%;
+    border: 1px solid black;
+    display: flex;
+    
+}
+
+.inner2 {
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+
+.header{
+    display: flex;
+    width: 95%;
+}
+
+.inner-header{
+    margin: 0 2px 2px 2px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: white;
+}
+
+h1,h2,h4,h5{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.leftimg{
+    float: left;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.container-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.links{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.links>div{
+    margin: 3px;
+}
